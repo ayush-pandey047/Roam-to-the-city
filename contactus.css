@@ -1,0 +1,183 @@
+.container {
+    display: flex; 
+}
+.layout{
+    flex:1;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.text1{
+    flex: 2;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.text2{
+    margin-top: 25px;
+    font-size: 25px;
+}
+.img{
+    flex: 1;
+    text-align: center;
+    margin-top: 65px;
+}
+.social-icons{
+    display: inline-flex;
+}
+.icon1{
+    text-decoration: none;
+    margin-right: 15px;
+    border-radius: 25%;
+    margin-bottom: 30px;
+}
+hr{
+    border: 1px solid whitesmoke; width: 100%;
+}
+.form{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#first-name{
+    width: 400px;
+    height: 25px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#last-name{
+    width: 400px;
+    height: 25px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#email{
+    width: 600px;
+    height: 25px;
+}
+#message{
+    width: 1000px;
+}
+#travel-city{
+    width: 500px;
+    height: 15px;
+}
+label{
+    font-size: 22px;
+    color: grey;
+}
+button{
+    background-color: black;
+    color: whitesmoke;
+    font-size: large;
+}
+#check{
+    font-size: 15px;
+    color:gray;
+    margin-bottom: 20px;
+}
+
+.logo-footer{
+    top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #4CAF50;
+    text-align:bottom;
+}
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section{
+    margin-bottom: 10px; 
+}
+
+.footer-sec h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-sec ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-sec ul li {
+    margin-bottom: 15px; 
+}
+
+.footer-sec ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-sec ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-quote {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    
+}
+
+.footer-quote p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+}
+.div5{
+    margin-bottom: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 200px; 
+    height: auto; 
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a{
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}

@@ -1,0 +1,177 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 200px; 
+    height: auto; 
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a{
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin-bottom: 10px; 
+}
+
+.footer-sec h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-sec ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-sec ul li {
+    margin-bottom: 15px; 
+}
+
+.footer-sec ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-sec ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-quote {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    
+}
+
+.footer-quote p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+}
+.logo-footer {
+    top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #4CAF50;
+    text-align:bottom;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.intro .content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.intro .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.intro .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats .stat {
+    flex: 1;
+}
+
+.stats .stat h2 {
+    font-size: 2.5rem;
+    color: #01796f;
+    margin-bottom: 0.5rem;
+}
+
+.stats .stat:nth-child(2) h2 {
+    color: #2b4865;
+}
+
+.stats .stat:nth-child(4) h2 {
+    color: #d4a017;
+}
+
+.stats .stat p {
+    font-size: 1rem;
+    color: #666;
+}
+span{
+    font-weight: bold;
+}
