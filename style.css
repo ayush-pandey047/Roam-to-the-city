@@ -1,12 +1,277 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: yellow;
-    color: #333;
-    text-align: center;
     margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 200px; 
+    height: auto; 
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+.video-header {
+    position: relative;
+    height: 82vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.overlay h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.overlay .btn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0074D9;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.overlay .btn:hover {
+    background-color: #fff;
+    color: #0074D9;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0074D9;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-sec {
+    margin-bottom: 10px; 
+}
+
+.footer-sec h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-sec ul {
+    list-style-type: none;
     padding: 0;
 }
 
-h1 {
-    color: #007acc;
+.footer-sec ul li {
+    margin-bottom: 15px; 
+}
+
+.footer-sec ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-sec ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-quote {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.footer-quote p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 3rem;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+
+    .overlay .btn {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* About Us Section */
+.about-us {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text .subheading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #0074D9;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.about-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #34495e;
+}
+
+.about-text p strong {
+    color: #0074D9;
+    font-weight: 600;
+}
+
+.about-text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0074D9;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-text .btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
