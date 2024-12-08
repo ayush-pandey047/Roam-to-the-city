@@ -191,7 +191,7 @@ footer {
     justify-content: space-around;
 }
 
-.footer-sec {
+.footer-section {
     margin-bottom: 10px; 
 }
 
@@ -224,13 +224,22 @@ footer {
     text-align: center;
     margin-top: 40px;
     font-style: italic;
+    
 }
 
 .footer-quote p {
     margin: 10px 0;
     margin-bottom: 15px;
 }
-
+.logo-footer {
+    top: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 4px #4CAF50;
+    text-align:bottom;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .overlay h1 {
