@@ -1,0 +1,270 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 200px; 
+    height: auto; 
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+
+.city-intro {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.city-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.photo-overlay h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.photo-overlay p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .photo-overlay h1 {
+        font-size: 2.5rem;
+    }
+    .photo-overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Key Highlights */
+/* Key Highlights Styling */
+.key-highlights {
+    background: linear-gradient(to bottom, #f5f7fa, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.key-highlights h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.key-highlights .section-intro {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.highlight {
+    background: #ffffff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+}
+
+.highlight:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.highlight h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight h3::before {
+    content: "✨";
+    color: #f39c12;
+}
+
+.highlight p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.highlight p strong {
+    color: #2c3e50;
+}
+
+.highlight p em {
+    font-style: italic;
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .highlight h3 {
+        font-size: 1.5rem;
+    }
+
+    .highlight p {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-sec {
+    margin-bottom: 10px; 
+}
+
+.footer-sec h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-sec ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-sec ul li {
+    margin-bottom: 15px; 
+}
+
+.footer-sec ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-sec ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-quote {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.footer-quote p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 3rem;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+
+    .overlay .btn {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } 
+}
+
+.details-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
